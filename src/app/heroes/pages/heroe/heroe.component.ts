@@ -7,7 +7,18 @@ import { HeroesService } from '../../services/heroes.service';
 
 @Component({
   selector: 'app-heroe',
-  templateUrl: './heroe.component.html'
+  templateUrl: './heroe.component.html',
+  styles:[
+    `
+    .img{
+
+      max-height: calc(100vh - 300px)
+    }
+    .avatar-image{
+
+    }
+    `
+  ]
 })
 
 
@@ -16,7 +27,8 @@ export class HeroeComponent implements OnInit{
   heroe!: Heroe;
   id: string = '';
 
-  constructor(private activatedRoute: ActivatedRoute, private heroesService: HeroesService) {};
+  constructor(private activatedRoute: ActivatedRoute,
+              private heroesService: HeroesService) {};
 
 ngOnInit(): void {
 
