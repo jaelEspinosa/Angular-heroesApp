@@ -6,7 +6,10 @@ de como implementar los siguientes ejemplos.
 ## Ejemplos:
 
 - routing
+- routes(root)
+- routes(children)
 - Lazy-Load
+- switchMap (subscribe a un observable con la respuesta de otro observable)
 - Material UI
 - Angular Flex-Layout
 
