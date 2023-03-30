@@ -7,51 +7,6 @@
 
 <ng-template #divHeroe class="heroe-card">
 
-  <div fxLayout="row"
-       fxLayout.xs="column"
-       fxLayoutAlign="center"
-       fxLayoutGap="20px">
-    <div fxFlex="30"
-         fxFlex.sm="50"
-
-    >
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>{{ heroe.superhero }}</mat-card-title>
-        </mat-card-header>
-        <img mat-card-image [src]="heroe | image" [alt]="[heroe.id]">
-      </mat-card>
-    </div>
-
-
-    <div fxFlex="40"
-         fxFlex.sm="50"    >
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>{{heroe.alter_ego}}</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <br>
-          <h3>{{ heroe.publisher}}</h3>
-          <p>
-            <br>
-            <strong>1ª aparición: </strong> {{heroe.first_appearance}}
-            <br>
-            <strong>Personajes: </strong> {{heroe.characters}}
-            <br>
-            <strong>Heroe: </strong> {{heroe.superhero }}
-          </p>
-        </mat-card-content>
-        <mat-card-actions class="spacer">
-          <button
-                mat-button
-                color="warn"
-                routerLink="/heroes/listado"
-          >Volver</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-
-  </div>
+ <app-heroe-screen [heroe] = "heroe"></app-heroe-screen>
 
 </ng-template>
