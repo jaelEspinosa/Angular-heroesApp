@@ -9,8 +9,6 @@ import { HeroesService } from '../../services/heroes.service';
   styles:[]
 })
 
-
-
 export class ListadoComponent implements OnInit {
 
 heroes:Heroe[] = []
@@ -23,8 +21,6 @@ ngOnInit () {
     .subscribe({
       next: heroes => {
         this.heroes = heroes
-        console.log(this.heroes);
-
 
       },
       error:(error) =>{
