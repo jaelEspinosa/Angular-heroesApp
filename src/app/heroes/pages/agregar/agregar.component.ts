@@ -12,6 +12,20 @@ import { HeroesService } from '../../services/heroes.service';
     .form{
       margin-top:10vh;
     }
+    img{
+      max-width:100%;
+      max-height: calc(100vh - 300px)
+    }
+
+    @media(max-width:576px){
+      img{
+
+        width:100%;
+        max-height: 100%
+
+      }
+
+    }
     `
 
   ]
@@ -65,7 +79,7 @@ guardar() {
   if (this.heroe.alter_ego.trim().length === 0) return;
   if (this.heroe.characters.trim().length === 0) return;
   if (this.heroe.alter_ego.trim().length === 0) return;
-  const validUrl =     /^(www)?.+\.[a-z]{2,6}(\.[a-z]{2,6})?.+\.[a-z]{2,4}$/
+  const validUrl =     /\/(\w+)\/(\w+)(\/?|\/?\?{1}.*)$/
   if (this.heroe.alt_img){
     if(validUrl.test(this.heroe.alt_img)) return
   }

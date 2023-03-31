@@ -6,9 +6,23 @@ import { Heroe } from '../../interfaces/heroe.interface';
   templateUrl: './heroe-card.component.html',
   styles:[
        `
-       mat-card{
+    mat-card{
       margin-top:10px;
        }
+
+    .photo{
+      margin:10px 10px;
+      max-width:600px;
+      max-height:500px;
+
+      border-radius:10px;
+      overflow-y:hidden;
+
+    }
+
+    img{
+      width:100%;
+    }
     `
 
   ]
