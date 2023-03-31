@@ -1,18 +1,4 @@
-[build]
-  command = "ng build --prod"
-  publish = "dist/my-app"
 
-[[plugins]]
-  package = "netlify-plugin-headers"
-
-[[plugins]]
-  package = "netlify-plugin-nextjs"
-
-[[plugins]]
-  package = "netlify-plugin-redirects"
-
-[[plugins]]
-  package = "netlify-plugin-cleanup"
 
 [[plugins]]
   package = "netlify-plugin-json-server"
@@ -21,3 +7,4 @@
 
  [plugins.inputs]
     origin = "config"
+
