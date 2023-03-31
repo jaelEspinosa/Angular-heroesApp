@@ -3,11 +3,11 @@
   publish = "dist/my-app"
 
 
+  [[plugins]]
+  package = "netlify-plugin-one"
 
-[[plugins]]
-  package = "netlify-plugin-json-server"
-  command = "json-server db.json --routes routes.json --middlewares middlewares.json"
-  port = 3000
+    [plugins.inputs]
+    port = 80
 
 
 
